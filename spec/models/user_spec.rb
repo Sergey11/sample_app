@@ -18,7 +18,7 @@ describe User do
   it { should be_valid }
 
   describe "when name is not present" do
-    before { @user.name = "a " * 50 }
+    before { @user.name = "a " * 20}
     it { should_not be_valid }
   end
 
